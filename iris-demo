@@ -41,6 +41,7 @@ with mlflow.start_run():
 
     mlflow.log_param('max_depth', max_depth)
 
+
     # Create a confusion matrix plot
     cm = confusion_matrix(y_test, y_pred)
     plt.figure(figsize=(6,6))
