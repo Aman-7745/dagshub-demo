@@ -52,7 +52,7 @@ with mlflow.start_run():
     # Save the plot as an artifact
     plt.savefig("confusion_matrix.png")
 
-    # mlflow code
+    # mlflow code 
     mlflow.log_artifact("confusion_matrix.png")
 
     mlflow.log_artifact(__file__)
